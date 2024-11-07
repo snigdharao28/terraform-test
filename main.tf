@@ -27,7 +27,7 @@ resource "fakewebservices_server" "servers1" {
 
   name = "Server ${count.index + 1}"
   type = "t2.micro"
-  vpc  = fakewebservices_vpc.primary_vpc.name
+  vpc  = fakewebservices_vpc.primary_vpc1.name
 }
 
 resource "fakewebservices_load_balancer" "primary_lb1" {
